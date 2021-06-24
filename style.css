@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+:root{
+    --background: #E43F5A;
+    --border: #222831;
+    --numBackground: #30475E;
+    --opBackground: #DDDDDD;
+    --fontColor: #DDDDDD;
+    --dispBackground: #DDDDDD ;
+}
+body{
+    background-color:var(--background) ;
+}
+
+h1{
+    text-align: center;
+    color: var(--fontColor);
+    font-size: 3rem;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.display{
+    display: flex;
+    word-break: break-all;
+    justify-content: flex-end;
+    width: 20rem;
+    min-height: 3.5rem;
+    border: 6px solid var(--numBackground);
+    border-radius: 2rem;
+    margin: 10px auto;
+    padding: 1px 4px;
+    background-color: var(--dispBackground);
+    font-family: 'Inconsolata', monospace;
+    font-size: 3.2rem;
+    color: var(--numBackground);
+}
+.container{
+    margin: auto;
+    display: grid;
+    width: 20rem;
+    height: 23rem;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 3fr 1fr;
+    /* border: 8px solid var(--border); */
+}
+
+.num-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    /* border: 0.5px solid var(--border);   */
+}
+.op-container{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    /* border: 0.5px solid var(--border); */
+}
+.btn{
+    border: 0.5px solid var(--background);
+    border-radius: 7rem;
+    margin: 2px;
+    background-color: var(--numBackground);
+    color: var(--fontColor);
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+  
+}
+.btn-op{
+    border: 0.5px solid var(--background);
+    border-radius: 2rem;
+    margin: 2px;
+    background-color: var(--opBackground);
+    color: var(--background);
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+}
+.btn:focus, .btn-op:focus{
+    outline: none;
+}
+.eq{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #00C853;
+    color: var(--opBackground);
+}
+.clr{
+    background-color: var(--background);
+    color: var(--opBackground);
+}
