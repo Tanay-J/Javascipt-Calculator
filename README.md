@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Calculator
 
@@ -17,3 +18,10 @@ Making a basic calculator app with addition, subtraction, multiplication and div
 - [Twitter](https://twitter.com/tanayj9)
 
   
+=======
+# Javascipt-Calculator
+
+This is a simple calculator app made with JavaScript
+
+Live Demo: https://tanay-j.github.io/Javascipt-Calculator/
+>>>>>>> fc68f5974cc60edda634115d40a10b66695f4320
